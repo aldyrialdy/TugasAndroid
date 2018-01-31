@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#fff"
+    tools:context="com.example.x555bp.myapplication.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/persib">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERSIB BANDUNG"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:id="@+id/btnpersib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:textColor="@color/black"
+
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/persija">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="PERSIJA JAKARTA"
+                />
+
+            <Button
+                android:id="@+id/btnpersija"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:background="@color/persib">
+
+                <TextView
+                    android:id="@+id/tv_scorepersib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="100sp"/>
+
+                <Button
+                    android:id="@+id/tambahpersib"
+                    android:onClick="tambahpersib"
+
+                    android:layout_below="@+id/tv_scorepersib"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"/>
+                <Button
+                    android:id="@+id/minuspersib"
+                    android:onClick="minuspersib"
+                    android:layout_toRightOf="@+id/tambahpersib"
+                    android:layout_below="@+id/tv_scorepersib"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="-"
+
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="100sp"/>
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginTop="16dp"
+                android:background="@color/persija">
+
+                <TextView
+                    android:id="@+id/tv_scorepersija"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="100sp"/>
+                <Button
+                    android:id="@+id/tambahpersija"
+                    android:onClick="tambahpersija"
+                    android:layout_below="@+id/tv_scorepersija"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"/>
+                <Button
+                    android:id="@+id/minpersija"
+                    android:onClick="minuspersija"
+                    android:layout_toRightOf="@+id/tambahpersija"
+                    android:layout_below="@+id/tv_scorepersija"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btnpberita"
+            android:onClick="Berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BERITA"/>
+        <Button
+            android:id="@+id/btnmap"
+
+            android:onClick="Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAP"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_hasil"
+            android:layout_width="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Hasil Akhir: "
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
